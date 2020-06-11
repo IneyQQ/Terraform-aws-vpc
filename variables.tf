@@ -22,11 +22,9 @@ variable vpc_public_subnet_cidrs {
 }
 variable vpc_private_subnet_cidrs {
   type = list(string)
-  default = []
 }
 variable vpc_nointernet_subnet_cidrs {
   type = list(string)
-  default = []
 }
 
 #
