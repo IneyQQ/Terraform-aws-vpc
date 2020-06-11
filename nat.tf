@@ -34,7 +34,7 @@ resource "aws_instance" "nat" {
   ami                    = var.nat_ami
   instance_type          = var.nat_instance_type
   source_dest_check      = false
-  key_name               = "${var.private_key_names_prefix}-nat"
+  key_name               = var.nat_private_key_name
   subnet_id              = aws_subnet.public[0].id
   vpc_security_group_ids = [aws_security_group.nat.id]
   tags = merge(var.tags,
