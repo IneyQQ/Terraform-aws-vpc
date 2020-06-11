@@ -38,5 +38,6 @@ variable nat_instance_type {
 }
 variable nat_private_key_name {
   description = "Private key name"
+  default     = ""
 }
 
